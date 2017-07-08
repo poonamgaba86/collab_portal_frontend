@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- all jobs are here
+<table class="col-md-6">
+<tr ng-repeat="job in jobs">
+	<td ng-if="currentUser.role=='student'" ng-show="job.active"><a href="" ng-click=jobDetail(job.id)>{{job.jobTitle}}</a></td>
+<td ng-if="currentUser.role=='Admin'"><a href="" ng-click=jobDetail(job.id)>{{job.jobTitle}}</a></td>
+</tr>
+
+</table>
+<div ng-show="showJobDetails">
+<b>Description</b> : {{job.jobDescr}}<br>
+<b>Skills Required</b> :{{job.skillsRequired}}<br>
+<b>location</b>:{{job.location}}<br>
+<b>Years Of Experience</b>{{job.yrsOfExp}}<br>
+<b>Company</b>{{job.company}}<br>
+<b>Posted On</b>{{job.postedOn | date:'yyyy:MM:dd'}}<br>
+<b>Skills Required</b>{{job.skillsRequired}}<br>
+<b ng-show="currentUser.role=='Admin'">Active:</b>
+<b ng-if="job.active">YES</b>
+<b ng-if="!job.active">NO</b>
+<b ng-show="currentUser.role=='Admin'">Active</b>{{job.Active}}<br>
+</div>
+<a href="#/Home">Home Page</a>
+ -->
+<h1><center>Hurry UP!!!!!!</center></h1>
+<h3><center>Jobs Available</center></h3><br><br>
+<div >
+	<div class="container">
+		<div class="row " >
+			<div class="col-md-4 " ng-repeat="job in jobs" >
+				
+			 	<div style="background-color: ;border-style:solid;" > 
+ 			
+				 <h4 ng-if="currentUser.role=='student'" ng-show="job.active"><center> <a href="" ng-click=jobDetail(job.id)>{{job.jobTitle}}</a></center></h4> 
+				<h4 ng-if="currentUser.role=='Admin'"> <center> <a href="" ng-click=jobDetail(job.id)>{{job.jobTitle}}</a></center></h4> 
+		 		<div ng-show="showJobDetails">
+<b>Description</b> : {{job.jobDescr}}<br>
+<b>Skills Required</b> :{{job.skillsRequired}}<br>
+<b>location</b>:{{job.location}}<br>
+<b>Years Of Experience</b>{{job.yrsOfExp}}<br>
+<b>Company</b>{{job.company}}<br>
+<b>Posted On</b>{{job.postedOn | date:'yyyy:MM:dd'}}<br>
+<b>Skills Required</b>{{job.skillsRequired}}<br>
+<b ng-show="currentUser.role=='Admin'">Active:</b>
+<b ng-if="job.active">YES</b>
+<b ng-if="!job.active">NO</b>
+<b ng-show="currentUser.role=='Admin'"></b>{{job.Active}}<br>
+<h4><center> <a href="" ng-click="updatependingrequest(p.from,'A')" class="btn btn-xs btn-info">Accept</a></center></h4>
+</div>
+			</div>
+			
+			<br>
+		</div>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

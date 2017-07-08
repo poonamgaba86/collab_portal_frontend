@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- <ul ng-repeat="friend in friendlist">
+<li ng-hide="friend.from==currentUser.name">{{friend.from}}   </li>
+<li ng-hide="friend.to==currentUser.name">{{friend.to}}   </li>
+</ul> -->
+
+<h1><center>My Friend List</center></h1><br><br>
+<div >
+	<div class="container">
+		<div class="row " >
+			<div class="col-md-4 " ng-repeat="friend in friendlist" >
+				<h6><center>Friends ForEver</center></h6>
+			 	<div style="background-color: ;border-style:solid;" > 
+ 			
+				 <h4 ng-hide="friend.from==currentUser.name"><center> FriendName  -  {{friend.from}}</center></h4> 
+				<h4 ng-hide="friend.to==currentUser.name"> <center> FriendName-{{friend.to}}</center></h4> 
+		 		
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

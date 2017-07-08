@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<!-- <table class="table table-striped">
+<tr ng-repeat="p in pendingLists">
+<td>
+{{p.from}}
+</td>
+<td>
+<a href="" ng-click="updatependingrequest(p.from,'A')" class="btn btn-xs btn-default">Accept</a>
+
+</td>
+<td>
+<a href="" ng-click="updatependingrequest(p.from,'D')" class="btn btn-xs btn-default">Deny</a>
+</td>
+</tr>
+</table>
+</div>
+
+ -->
+<h1><center>Pending Request needs to be accepted</center></h1><br><br>
+<div >
+	<div class="container">
+		<div class="row " >
+			<div class="col-md-4 " ng-repeat="p in pendingLists" >
+				<h6><center>Accept My Request</center></h6>
+			 	<div style="background-color: ;border-style:solid;" > 
+ 			
+				 <h4><center> UserName  -  {{p.from}}</center></h4> 
+				<h4><center> <a href="" ng-click="updatependingrequest(p.from,'A')" class="btn btn-xs btn-info">Accept</a></center></h4> 
+		 		<h4 ><center><a href="" ng-click="updatependingrequest(p.from,'D')" class="btn btn-xs btn-info">Deny</a></center> </h4> 
+			 	
+			
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
